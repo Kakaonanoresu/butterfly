@@ -1,0 +1,35 @@
+# butterfly - ISO に含める初期パッケージ（Arch 系想定、AUR のものは注記）
+# 基本
+base
+linux-lts
+linux-zen            # optional: low-latency kernel（選択可能）
+bash
+# Wayland / compositor
+wayland
+sway                 # 軽量 Wayland タイル型 compositor（変更可能）
+libseat
+# Graphics / Vulkan
+mesa
+vulkan-icd-loader
+vulkan-tools
+# NVIDIA は公式ドライバを別途配布インストール用に案内
+# Gaming
+steam
+lutris
+gamemode
+# Proton-GE: AUR から proton-ge-custom や protonup を使って導入
+# Audio
+pipewire
+pipewire-pulse
+wireplumber
+# Network / Utilities
+networkmanager
+openssh
+# Tools
+sudo
+git
+# 開発 / デバッグ
+vulkan-headers
+lib32-mesa
+lib32-vulkan-icd-loader
+lib32-alsa-plugins
