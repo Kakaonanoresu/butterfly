@@ -1,0 +1,13 @@
+[Unit]
+Description=Apply butterfly performance tuning for games
+Wants=graphical.target
+After=graphical.target
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+ExecStart=/usr/local/bin/butterfly-tune.sh start
+ExecStop=/usr/local/bin/butterfly-tune.sh stop
+
+[Install]
+WantedBy=multi-user.target
